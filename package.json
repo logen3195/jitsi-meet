@@ -178,9 +178,9 @@
     "ts-loader": "9.4.2",
     "typescript": "5.0.4",
     "unorm": "1.6.0",
-    "webpack": "5.76.0",
+    "webpack": "^5.93.0",
     "webpack-bundle-analyzer": "4.4.2",
-    "webpack-cli": "4.9.0",
+    "webpack-cli": "^5.1.4",
     "webpack-dev-server": "4.15.2"
   },
   "overrides": {
@@ -204,7 +204,8 @@
     "validate": "npm ls",
     "tsc-test:web": "tsc --project tsconfig.web.json --listFilesOnly | grep -v node_modules | grep native",
     "tsc-test:native": "tsc --project tsconfig.native.json --listFilesOnly | grep -v node_modules | grep web",
-    "start": "make dev"
+    "start": "make dev",
+    "build": "webpack --mode production"
   },
   "resolutions": {
     "@types/react": "17.0.14",
